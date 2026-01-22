@@ -22,19 +22,17 @@ export default function Hero() {
             transition={{ duration: 0.8 }}
             className="text-white space-y-8"
           >
-            {/* Logo */}
-            <div className="flex items-center gap-3">
-              <Image 
-                src="/app_media_assets/logo/conch-logo-3.png" 
-                alt="Conched Logo" 
-                width={120} 
-                height={120}
-                className="drop-shadow-2xl"
-              />
-            </div>
-
-            {/* Main headline */}
+            {/* Main headline with integrated logo */}
             <div>
+              <div className="flex items-center gap-4 mb-2">
+                <Image 
+                  src="/app_media_assets/logo/conch-logo-3.png" 
+                  alt="Conched Logo" 
+                  width={180} 
+                  height={180}
+                  className="drop-shadow-2xl transform scale-x-[-1]"
+                />
+              </div>
               <h2 className="text-4xl md:text-6xl lg:text-7xl font-black leading-tight mb-4">
                 Blow the Conch.
                 <br />
