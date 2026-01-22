@@ -97,7 +97,7 @@ export default function Hero() {
                     {/* Real app screenshot */}
                     <div className="relative h-full">
                       <Image 
-                        src="/screenshots/IMG_5503.jpeg"
+                        src="/screenshots/background.jpeg"
                         alt="Conched App Interface - Conchers Friends List"
                         fill
                         className="object-cover"
