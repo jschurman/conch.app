@@ -18,7 +18,7 @@ const faqs = [
       },
       {
         q: 'Is Conched free?',
-        a: 'Yes! All core features are free forever. Premium themes cost $2.99-$5.99 each (one-time purchase), but they\'re completely optional.',
+        a: 'Yes! All features and themes are completely free forever. No subscriptions, no in-app purchases, no hidden costs.',
       },
       {
         q: 'What platforms does Conched support?',
@@ -72,12 +72,12 @@ const faqs = [
         a: 'Each theme includes a custom conch shell design, unique notification sound, themed background image, and matching color palette. It\'s a complete visual and audio makeover.',
       },
       {
-        q: 'Are themes one-time purchases or subscriptions?',
-        a: 'One-time purchases. Buy once, keep forever. No recurring charges.',
+        q: 'Are themes free?',
+        a: 'Yes! All 8 themes are completely free. No purchases, no subscriptions, no hidden costs.',
       },
       {
-        q: 'Can I switch themes after I buy them?',
-        a: 'Yes! Go to Settings → My Themes and switch anytime. You can use any theme you own whenever you want.',
+        q: 'Can I switch themes?',
+        a: 'Absolutely! Go to Settings → Themes and switch anytime. Use any theme whenever you want—all completely free.',
       },
     ],
   },

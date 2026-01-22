@@ -31,7 +31,7 @@ const features = [
   {
     icon: Palette,
     title: 'Theme Store',
-    description: '12 premium themes featuring unique shells, sounds, and backgrounds. From D&D to Disney, express yourself your way.',
+    description: '8 free themes featuring unique shells, sounds, and backgrounds. From D&D to Rolling Stones, express yourself your way.',
     color: 'from-indigo-500 to-purple-500',
   },
   {
@@ -158,7 +158,7 @@ export default function Features() {
           className="text-center mt-16"
         >
           <p className="text-lg text-gray-600 mb-6">
-            All features are <span className="font-bold text-primary-600">free forever</span>. Premium themes are optional.
+            All features and themes are <span className="font-bold text-primary-600">free forever</span>. No hidden costs.
           </p>
           <a 
             href="#download"

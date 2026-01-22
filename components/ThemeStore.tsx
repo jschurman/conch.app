@@ -9,30 +9,13 @@ const themes = [
     name: 'Classic Conch',
     price: 'FREE',
     image: '/app_media_assets/ConchShells/classic.imageset/classic.png',
-    background: '/app_media_assets/Backgrounds/christmas_2025_background.imageset/christmas_2025_background.png',
+    background: null, // Use gradient only
     description: 'The original beach shell',
-    gradient: 'from-blue-400 to-cyan-500',
-  },
-  {
-    name: "Raising Cane's 2025",
-    price: '$4.99',
-    image: '/app_media_assets/ConchShells/canes_2025.imageset/canes_2025.png',
-    background: '/app_media_assets/Backgrounds/canes_2025_background.imageset/canes_2025_background.png',
-    description: 'Official branded theme',
-    gradient: 'from-yellow-500 to-yellow-600',
-    featured: true,
-  },
-  {
-    name: 'Christmas 2025',
-    price: '$2.99',
-    image: '/app_media_assets/ConchShells/christmas_2025.imageset/christmas_2025.png',
-    background: '/app_media_assets/Backgrounds/christmas_2025_background.imageset/christmas_2025_background.png',
-    description: 'Festive holiday vibes',
-    gradient: 'from-red-500 to-green-600',
+    gradient: 'from-blue-400 via-purple-500 to-pink-500',
   },
   {
     name: "New Year's 2026",
-    price: '$2.99',
+    price: 'FREE',
     image: '/app_media_assets/ConchShells/new_years_2026.imageset/new_years_2026.png',
     background: '/app_media_assets/Backgrounds/new_years_2026_background.imageset/new_years_2026_background.png',
     description: 'Celebration mode',
@@ -40,7 +23,7 @@ const themes = [
   },
   {
     name: 'D&D: Blasting',
-    price: '$3.99',
+    price: 'FREE',
     image: '/app_media_assets/ConchShells/dnd_blasting.imageset/dnd_blasting.png',
     background: '/app_media_assets/Backgrounds/dnd_blasting_background.imageset/dnd_blasting_background.png',
     description: 'Fantasy fire and fury',
@@ -48,7 +31,7 @@ const themes = [
   },
   {
     name: 'D&D: Silent',
-    price: '$3.99',
+    price: 'FREE',
     image: '/app_media_assets/ConchShells/dnd_silent.imageset/dnd_silent.png',
     background: '/app_media_assets/Backgrounds/dnd_silent_background.imageset/dnd_silent_background.png',
     description: 'Stealthy rogue theme',
@@ -56,7 +39,7 @@ const themes = [
   },
   {
     name: 'D&D: Valhalla',
-    price: '$4.99',
+    price: 'FREE',
     image: '/app_media_assets/ConchShells/dnd_valhalla.imageset/dnd_valhalla.png',
     background: '/app_media_assets/Backgrounds/dnd_valhalla_background.imageset/dnd_valhalla_background.png',
     description: 'Epic Viking warriors',
@@ -64,12 +47,28 @@ const themes = [
     featured: true,
   },
   {
-    name: 'Mickey Magic',
-    price: '$5.99',
-    image: '/app_media_assets/ConchShells/mickey.imageset/mickey.png',
-    background: '/app_media_assets/Backgrounds/mickey_background.imageset/mickey_background.png',
-    description: 'Disney-inspired magic',
-    gradient: 'from-blue-600 to-purple-600',
+    name: 'Spring Vibes',
+    price: 'FREE',
+    image: '/app_media_assets/ConchShells/conch_spring.imageset/conch_spring.png',
+    background: null,
+    description: 'Colorful spring energy',
+    gradient: 'from-pink-400 to-coral-500',
+  },
+  {
+    name: 'Graffiti Style',
+    price: 'FREE',
+    image: '/app_media_assets/ConchShells/graffiti_conch.imageset/graffiti_conch.png',
+    background: null,
+    description: 'Urban street art vibes',
+    gradient: 'from-purple-600 to-blue-600',
+  },
+  {
+    name: 'Rolling Stones',
+    price: 'FREE',
+    image: '/app_media_assets/ConchShells/rolling_stones_conch.imageset/rolling_stones_conch.png',
+    background: null,
+    description: 'Rock and roll legends',
+    gradient: 'from-red-600 to-black',
   },
 ];
 
@@ -121,7 +120,7 @@ export default function ThemeStore() {
           </div>
 
           <p className="text-sm text-gray-400">
-            Buy once, keep forever • Switch themes anytime • No subscriptions
+            All themes free forever • Switch anytime • No subscriptions required
           </p>
         </motion.div>
 
@@ -149,13 +148,15 @@ export default function ThemeStore() {
               <div className="relative bg-white/5 backdrop-blur-sm rounded-3xl overflow-hidden border border-white/10 hover:border-white/30 transition-all duration-300">
                 {/* Background preview */}
                 <div className="relative h-48 overflow-hidden">
-                  <div className={`absolute inset-0 bg-gradient-to-br ${theme.gradient} opacity-50`}></div>
-                  <Image
-                    src={theme.background}
-                    alt={`${theme.name} background`}
-                    fill
-                    className="object-cover opacity-40 group-hover:opacity-60 transition-opacity duration-300"
-                  />
+                  <div className={`absolute inset-0 bg-gradient-to-br ${theme.gradient} ${theme.background ? 'opacity-50' : 'opacity-100'}`}></div>
+                  {theme.background && (
+                    <Image
+                      src={theme.background}
+                      alt={`${theme.name} background`}
+                      fill
+                      className="object-cover opacity-40 group-hover:opacity-60 transition-opacity duration-300"
+                    />
+                  )}
                   
                   {/* Conch shell overlay */}
                   <div className="absolute inset-0 flex items-center justify-center">
@@ -197,18 +198,18 @@ export default function ThemeStore() {
           className="text-center"
         >
           <p className="text-gray-400 mb-8">
-            + More themes including Rolling Stones, Tropical Paradise, Mystical Realm, and seasonal releases
+            8 unique themes to express your style • All completely free
           </p>
           
           <a 
             href="#download"
             className="inline-block bg-gradient-to-r from-coral-500 to-pink-500 text-white px-10 py-4 rounded-2xl text-lg font-semibold shadow-xl hover:shadow-2xl hover:scale-105 transition-all duration-300"
           >
-            Browse All Themes in App
+            Download and Try All Themes
           </a>
 
           <p className="text-sm text-gray-500 mt-6">
-            New themes added regularly • Early access for existing customers
+            New themes coming soon • All themes always free
           </p>
         </motion.div>
       </div>
