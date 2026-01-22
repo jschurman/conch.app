@@ -25,13 +25,12 @@ export default function Hero() {
             {/* Logo */}
             <div className="flex items-center gap-3">
               <Image 
-                src="/app_media_assets/conch_logo.png" 
+                src="/app_media_assets/logo/conch-logo.png" 
                 alt="Conched Logo" 
-                width={60} 
-                height={60}
-                className="drop-shadow-lg"
+                width={80} 
+                height={80}
+                className="drop-shadow-2xl"
               />
-              <h1 className="text-5xl md:text-6xl font-bold">Conched</h1>
             </div>
 
             {/* Main headline */}
