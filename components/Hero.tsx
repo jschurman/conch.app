@@ -97,8 +97,8 @@ export default function Hero() {
                     {/* Real app screenshot */}
                     <div className="relative h-full">
                       <Image 
-                        src="/screenshots/IMG_5490.jpeg"
-                        alt="Conched App Interface - Blow the Conch"
+                        src="/screenshots/IMG_5503.jpeg"
+                        alt="Conched App Interface - Conchers Friends List"
                         fill
                         className="object-cover"
                         priority
@@ -115,8 +115,12 @@ export default function Hero() {
                 transition={{ duration: 0.6, delay: 1 }}
                 className="absolute -left-8 top-1/4 glass-dark rounded-2xl p-4 shadow-xl max-w-[200px] hidden lg:block z-20"
               >
-                <p className="text-white text-sm font-semibold mb-1">🐚 Christy blew the conch!</p>
-                <p className="text-white/80 text-xs">Coffee at Starbucks in 10 min</p>
+                <p className="text-white text-sm font-semibold mb-1">
+                  <span className="inline-block">🐚 Christy blew the</span>
+                  <br />
+                  <span className="inline-block ml-4">conch!</span>
+                </p>
+                <p className="text-white/80 text-xs">Lunch at the cafe in 10 min</p>
               </motion.div>
 
               {/* Floating stats card */}
