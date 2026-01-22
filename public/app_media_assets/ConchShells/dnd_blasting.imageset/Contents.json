@@ -1,0 +1,23 @@
+{
+  "images": [
+    {
+      "filename": "dnd_blasting.png",
+      "idiom": "universal",
+      "scale": "1x"
+    },
+    {
+      "filename": "dnd_blasting@2x.png",
+      "idiom": "universal",
+      "scale": "2x"
+    },
+    {
+      "filename": "dnd_blasting@3x.png",
+      "idiom": "universal",
+      "scale": "3x"
+    }
+  ],
+  "info": {
+    "author": "xcode",
+    "version": 1
+  }
+}

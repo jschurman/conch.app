@@ -1,0 +1,23 @@
+{
+  "images": [
+    {
+      "filename": "canes_2025_blowing.png",
+      "idiom": "universal",
+      "scale": "1x"
+    },
+    {
+      "filename": "canes_2025_blowing@2x.png",
+      "idiom": "universal",
+      "scale": "2x"
+    },
+    {
+      "filename": "canes_2025_blowing@3x.png",
+      "idiom": "universal",
+      "scale": "3x"
+    }
+  ],
+  "info": {
+    "author": "xcode",
+    "version": 1
+  }
+}
