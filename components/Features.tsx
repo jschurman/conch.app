@@ -99,9 +99,9 @@ export default function Features() {
           transition={{ duration: 0.6 }}
           className="text-center mb-16"
         >
-          <h2 className="text-5xl md:text-6xl font-black text-gray-900 mb-6">
+          <h2 className="text-5xl md:text-6xl font-black text-gray-900 mb-6 leading-tight">
             Everything You Need to
-            <span className="block bg-gradient-to-r from-primary-500 to-ocean-500 bg-clip-text text-transparent">
+            <span className="block bg-gradient-to-r from-primary-500 to-ocean-500 bg-clip-text text-transparent pb-2">
               Hang Out More
             </span>
           </h2>
