@@ -116,7 +116,7 @@ export default function Hero() {
                 initial={{ opacity: 0, y: 20 }}
                 animate={{ opacity: 1, y: 0 }}
                 transition={{ duration: 0.6, delay: 1 }}
-                className="absolute -left-8 top-1/4 glass-dark rounded-2xl p-4 shadow-xl max-w-[200px] hidden lg:block"
+                className="absolute -left-8 top-1/4 glass-dark rounded-2xl p-4 shadow-xl max-w-[200px] hidden lg:block z-20"
               >
                 <p className="text-white text-sm font-semibold mb-1">🐚 Sarah blew the conch!</p>
                 <p className="text-white/80 text-xs">Coffee at Starbucks in 10 min</p>
@@ -127,7 +127,7 @@ export default function Hero() {
                 initial={{ opacity: 0, y: -20 }}
                 animate={{ opacity: 1, y: 0 }}
                 transition={{ duration: 0.6, delay: 1.2 }}
-                className="absolute -right-8 bottom-1/4 glass-dark rounded-2xl p-4 shadow-xl hidden lg:block"
+                className="absolute -right-8 bottom-1/4 glass-dark rounded-2xl p-4 shadow-xl hidden lg:block z-20"
               >
                 <p className="text-white text-sm font-semibold mb-2">✨ Live RSVPs</p>
                 <div className="flex -space-x-2">
