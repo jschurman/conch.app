@@ -115,7 +115,7 @@ export default function Hero() {
                 transition={{ duration: 0.6, delay: 1 }}
                 className="absolute -left-8 top-1/4 glass-dark rounded-2xl p-4 shadow-xl max-w-[200px] hidden lg:block z-20"
               >
-                <p className="text-white text-sm font-semibold mb-1">🐚 Sarah blew the conch!</p>
+                <p className="text-white text-sm font-semibold mb-1">🐚 Christy blew the conch!</p>
                 <p className="text-white/80 text-xs">Coffee at Starbucks in 10 min</p>
               </motion.div>
 
@@ -128,9 +128,11 @@ export default function Hero() {
               >
                 <p className="text-white text-sm font-semibold mb-2">✨ Live RSVPs</p>
                 <div className="flex -space-x-2">
-                  {[1, 2, 3, 4].map((i) => (
-                    <div key={i} className="w-8 h-8 rounded-full bg-gradient-to-br from-coral-400 to-coral-600 border-2 border-white"></div>
-                  ))}
+                  {/* Diverse avatar faces */}
+                  <img src="https://i.pravatar.cc/150?img=45" alt="User" className="w-8 h-8 rounded-full border-2 border-white object-cover" />
+                  <img src="https://i.pravatar.cc/150?img=32" alt="User" className="w-8 h-8 rounded-full border-2 border-white object-cover" />
+                  <img src="https://i.pravatar.cc/150?img=20" alt="User" className="w-8 h-8 rounded-full border-2 border-white object-cover" />
+                  <img src="https://i.pravatar.cc/150?img=65" alt="User" className="w-8 h-8 rounded-full border-2 border-white object-cover" />
                   <div className="w-8 h-8 rounded-full bg-white/20 border-2 border-white flex items-center justify-center text-white text-xs font-bold">+5</div>
                 </div>
               </motion.div>
